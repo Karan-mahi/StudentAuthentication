@@ -1,0 +1,12 @@
+<h6>{{list.0.fullName}}</h6>
+<h6>{{list.0.rollNo}}</h6>
+<h6>{{list.0.lastMealDate}}</h6>
+<h6>{{list.0.lastMeal}}</h6>
+<h1 style="color: green; display: {{approve}};">Approved</h1>
+<h1 style="color: red; display: {{disapprove}};">Rejected</h1>
+<form action="/student" method="get">
+  <input name="date" type="text" hidden value="{{date}}" />
+  <input name="meal" type="text" hidden value="{{meal}}" />
+  <button type="submit" class="btn btn-info">
+    OK</button>
+</form>
